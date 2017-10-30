@@ -1,0 +1,26 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+#GET     /                                                  controllers.HomeController.index
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file                                               controllers.Assets.versioned(path="/public", file: Asset)
+
+GET     /analytics                                                  controllers.AnalyticsController.index
+GET     /analytics/auth                                             controllers.AnalyticsController.auth
+
+GET     /api/analytics/accounts                                     controllers.AnalyticsAccountsController.index
+GET     /api/analytics/accounts/:accountId/properties/:propertyId   controllers.AnalyticsAccountsController.property(accountId:String, propertyId: String)
+
+GET     /api/analytics/reports/overview/:id                         controllers.AnalyticsReportsController.overview(id:String)
+GET     /api/analytics/reports/audience/:id                         controllers.AnalyticsReportsController.audience(id:String)
+GET     /api/analytics/reports/mobile/:id                           controllers.AnalyticsReportsController.mobile(id:String)
+GET     /api/analytics/reports/traffic/:id                          controllers.AnalyticsReportsController.traffic(id:String)
+GET     /api/analytics/reports/content/:id                          controllers.AnalyticsReportsController.content(id:String)
+GET     /api/analytics/reports/conversions/:id                      controllers.AnalyticsReportsController.conversions(id:String)
+
+GET     /                                                           controllers.ApplicationController.index(any = "")
+GET     /*any                                                       controllers.ApplicationController.index(any)
