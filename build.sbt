@@ -1,6 +1,6 @@
 import sbt.Keys.libraryDependencies
 
-name := """play-scala-app"""
+name := """play-scala-angular2-analytics"""
 organization := "com.example"
 
 version := "1.0-SNAPSHOT"
