@@ -1,0 +1,16 @@
+logs
+target
+
+/.g8
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+
+/conf/client_secrets.json
+
+# System Files
+.DS_Store
+Thumbs.db
