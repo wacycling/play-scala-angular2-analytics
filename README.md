@@ -5,5 +5,5 @@ Example for Google Analytics Reporting API v4 in Play Framework 2.6 for Scala + 
 * Scala: 2.12.3
 * Angular: 4.2.4
 
-Google Analyticsのデータを利用して、グラフを描画します。
+Google Analyticsのデータを利用して、グラフを描画するExample。
 
