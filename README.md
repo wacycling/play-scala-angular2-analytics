@@ -7,7 +7,3 @@ Example for Google Analytics Reporting API v4 in Play Framework 2.6 for Scala + 
 
 Google Analyticsのデータを利用して、グラフを描画します。
 
-## Demo
-https://play-scala-angular2-analytics.herokuapp.com
-
-※ GoogleAnalyticsに紐づくGoogleアカウントが必要
